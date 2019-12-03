@@ -6,11 +6,13 @@ namespace Autocenter_v2.Models
 {
     class Cilente:Pessoa
     {
-        private int qtdPontosFidelidade;
+        public int QtdPontosFidelidade { get; set; }
 
+
+        public Cliente() { }
         public Cliente(int qtdPontosFidelidade)
         {
-            this.qtdPontosFidelidade = qtdPontosFidelidade;
+            this.QtdPontosFidelidade = qtdPontosFidelidade;
         }
 
         public int VerificaPontos()

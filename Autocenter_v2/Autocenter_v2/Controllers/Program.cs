@@ -6,7 +6,8 @@ namespace Autocenter_v2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
+            
         }
     }
 }
