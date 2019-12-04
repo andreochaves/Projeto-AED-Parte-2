@@ -28,3 +28,5 @@ C:\Users\Developer\Documents\Projetos\C#\Projeto_AED2\Projeto-AED-Parte-2\Autoce
 C:\Users\Developer\Documents\Projetos\C#\Projeto_AED2\Projeto-AED-Parte-2\Autocenter_v2\Autocenter_v2\obj\Debug\netcoreapp3.0\Autocenter_v2.csproj.CopyComplete
 C:\Users\Developer\Documents\Projetos\C#\Projeto_AED2\Projeto-AED-Parte-2\Autocenter_v2\Autocenter_v2\obj\Debug\netcoreapp3.0\Autocenter_v2.dll
 C:\Users\Developer\Documents\Projetos\C#\Projeto_AED2\Projeto-AED-Parte-2\Autocenter_v2\Autocenter_v2\obj\Debug\netcoreapp3.0\Autocenter_v2.pdb
+C:\Users\ANDRÉ\Desktop\Projeto AED 2\Projeto-AED-Parte-2-master\Autocenter_v2\Autocenter_v2\obj\Debug\netcoreapp3.0\Autocenter_v2.dll
+C:\Users\ANDRÉ\Desktop\Projeto AED 2\Projeto-AED-Parte-2-master\Autocenter_v2\Autocenter_v2\obj\Debug\netcoreapp3.0\Autocenter_v2.pdb

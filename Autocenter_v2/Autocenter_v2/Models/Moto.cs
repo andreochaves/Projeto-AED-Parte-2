@@ -6,7 +6,7 @@ namespace Autocenter_v2.Models
 {
     class Moto:Veiculo
     {
-        public int Cilindradas { get; set; }
+        public int cilindradas;
 
         public Moto() { }
 
@@ -14,6 +14,7 @@ namespace Autocenter_v2.Models
         {
             this.Cilindradas = cilindradas;
         }
-        
+        public int getCilindradas() { return cilindradas; }
+        public void setCilindradas(int cl) { cilindradas = cl; }
     }
 }

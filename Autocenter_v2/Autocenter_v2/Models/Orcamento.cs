@@ -6,10 +6,10 @@ namespace Autocenter_v2.Models
 {
     class Orcamento
     {
-        public string TipoServico { get; set; }
-        public double Valor { get; set; }
-        public string FormaPagamento { get; set; }
-        public double ValorTotal { get; set; }
+        private string tipoServico;
+        private double valor;
+        private string formaPagamento;
+        private double valorTotal;
 
         public Orcamento() { }
 
@@ -20,7 +20,14 @@ namespace Autocenter_v2.Models
             this.FormaPagamento = formaPagamento;
             this.ValorTotal = valorTotal;
         }
-
+        public string getTipoServico() { return tipoServico; }
+        public double getvalor() { return valor; }
+        public string getFormaPagamento() { return formaPagamento; }
+        public double getValorTotal() { return valorTotal; }
+        public void setMarca(string ts) { tipoServico = ts; }
+        public void setModelo(double va) { valor = va; }
+        public void setPlaca(string fp) { formaPagamento = fp; }
+        public void setCor(double vt) { valorTotal = vt; }
        
     }
 }

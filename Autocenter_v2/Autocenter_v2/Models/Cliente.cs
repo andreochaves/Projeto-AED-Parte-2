@@ -6,7 +6,7 @@ namespace Autocenter_v2.Models
 {
     class Cliente : Pessoa
     {
-        public int QtdPontosFidelidade { get; set; }
+        private int qtdPontosFidelidade;
 
 
         public Cliente() { }
@@ -15,15 +15,18 @@ namespace Autocenter_v2.Models
             this.QtdPontosFidelidade = qtdPontosFidelidade;
 
 
-            void VerificaPontos()
-            {
-
-            }
-            void AdicionaPontos()
-            {
-
-            }
+            
 
         }
+        void VerificaPontos()
+            {
+
+            }
+        void AdicionaPontos()
+            {
+
+            }
+        public int getQtdPontosFidelidade() { return qtdPontosFidelidade; }
+        public void setQtdPontosFidelidade(int qpf) { qtdPontosFidelidade = qpf; }
     }
 }

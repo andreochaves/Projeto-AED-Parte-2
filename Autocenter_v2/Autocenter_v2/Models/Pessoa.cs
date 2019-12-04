@@ -6,10 +6,10 @@ namespace Autocenter_v2.Models
 {
     public class Pessoa
     {
-        protected string Nome { get; set; }
-        protected string Cpf { get; set; }
-        protected string Endereco { get; set; }
-        protected int Idade { get; set; }
+        private string nome;
+        private string cpf;
+        private string endereco;
+        private int idade;
 
         public Pessoa() { }
         public Pessoa(string nome,string cpf,string endereco,int idade)
@@ -86,6 +86,13 @@ namespace Autocenter_v2.Models
             return true;
         }
 
-
+        public string getNome() { return nome; }
+        public string getCPF() { return cpf; }
+        public string getEndereco() { return endereco; }
+        public int getIdade() { return idade; }
+        public void setNome(string no) { nome = no; }
+        public void setCPF(string cp) { cpf = cp; }
+        public void setEndereco(string ed) { endereco = ed; }
+        public void setIdade(int id) { idade = id; }
     }
 }

@@ -6,10 +6,10 @@ namespace Autocenter_v2.Models
 {
     class Veiculo
     {
-        protected string Marca { get; set; }
-        protected string Modelo { get; set; }
-        protected string Placa { get; set; }
-        protected string Cor { get; set; }
+        private string marca;
+        private string modelo;
+        private string placa;
+        private string cor;
 
         public Veiculo() { }
 
@@ -20,5 +20,14 @@ namespace Autocenter_v2.Models
             this.Placa = placa;
             this.Cor = cor;
         }
+
+        public string getMarca() { return marca; }
+        public string getModelo() { return modelo; }
+        public string getPlaca() { return placa; }
+        public string getCor() { return cor; }
+        public void setMarca(string ma) { marca = ma; }
+        public void setModelo(string mo) { modelo = mo; }
+        public void setPlaca(string pl) { placa = pl; }
+        public void setCor(string co) { cor = co; }
     }
 }
