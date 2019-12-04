@@ -11,8 +11,6 @@ namespace Autocenter_v2.Models
         protected string Endereco { get; set; }
         protected int Idade { get; set; }
 
-        private bool valido = false;
-
         public Pessoa() { }
         public Pessoa(string nome,string cpf,string endereco,int idade)
         {
@@ -23,14 +21,15 @@ namespace Autocenter_v2.Models
         }
         public bool verificarIdade()
         {
-            if (this.idade >= 18)
+         bool valido = false;
+            if (this.Idade >= 18)
             {
                 valido = true;
             }
             return valido;
         }
 
-        public bool verificarCpf()
+        public bool verificarCpf(string cpf)
         {
 
             int[] multiplicador1 = new int[9] { 10, 9, 8, 7, 6, 5, 4, 3, 2 };
@@ -50,50 +49,41 @@ namespace Autocenter_v2.Models
             cpf = cpf.Replace(".", "").Replace("-", "");
 
             if (cpf.Length != 11)
-
-                Console.WriteLine("CPF Invalido!");
+                return false;
 
             tempCpf = cpf.Substring(0, 9);
-
             soma = 0;
-
-            for (int i = 0; i < 9; i++)
-
+            for (int i = 0; i < 9; i++) { 
                 soma += int.Parse(tempCpf[i].ToString()) * multiplicador1[i];
-
+            }
             resto = soma % 11;
 
-            if (resto < 2)
-
+            if (resto < 2) { 
                 resto = 0;
-
-            else
-
+            }else {
                 resto = 11 - resto;
+            }
 
             digito = resto.ToString();
-
             tempCpf = tempCpf + digito;
-
             soma = 0;
 
-            for (int i = 0; i < 10; i++)
-
+            for (int i = 0; i < 10; i++) { 
                 soma += int.Parse(tempCpf[i].ToString()) * multiplicador2[i];
+            }
 
             resto = soma % 11;
 
-            if (resto < 2)
+            if (resto < 2) { 
 
                 resto = 0;
 
-            else
-
+            }else {
                 resto = 11 - resto;
+            }
 
             digito = digito + resto.ToString();
-
-
+            return true;
         }
 
 
