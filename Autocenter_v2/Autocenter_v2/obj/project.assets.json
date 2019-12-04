@@ -8,23 +8,19 @@
     ".NETCoreApp,Version=v3.0": []
   },
   "packageFolders": {
-    "C:\\Users\\ANDRÉ\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Developer\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ANDRÉ\\Desktop\\Projeto AED 2\\Projeto-AED-Parte-2-master\\Autocenter_v2\\Autocenter_v2\\Autocenter_v2.csproj",
+      "projectUniqueName": "C:\\Users\\Developer\\Documents\\Projetos\\C#\\Projeto_AED2\\Projeto-AED-Parte-2\\Autocenter_v2\\Autocenter_v2\\Autocenter_v2.csproj",
       "projectName": "Autocenter_v2",
-      "projectPath": "C:\\Users\\ANDRÉ\\Desktop\\Projeto AED 2\\Projeto-AED-Parte-2-master\\Autocenter_v2\\Autocenter_v2\\Autocenter_v2.csproj",
-      "packagesPath": "C:\\Users\\ANDRÉ\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ANDRÉ\\Desktop\\Projeto AED 2\\Projeto-AED-Parte-2-master\\Autocenter_v2\\Autocenter_v2\\obj\\",
+      "projectPath": "C:\\Users\\Developer\\Documents\\Projetos\\C#\\Projeto_AED2\\Projeto-AED-Parte-2\\Autocenter_v2\\Autocenter_v2\\Autocenter_v2.csproj",
+      "packagesPath": "C:\\Users\\Developer\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Developer\\Documents\\Projetos\\C#\\Projeto_AED2\\Projeto-AED-Parte-2\\Autocenter_v2\\Autocenter_v2\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\ANDRÉ\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -48,10 +44,21 @@
     "frameworks": {
       "netcoreapp3.0": {
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
