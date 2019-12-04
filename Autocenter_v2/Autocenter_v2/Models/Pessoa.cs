@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Autocenter_v2.Models
 {
-    class Pessoa
+    public class Pessoa
     {
         protected string Nome { get; set; }
         protected string Cpf { get; set; }

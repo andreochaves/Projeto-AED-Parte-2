@@ -1,4 +1,4 @@
-﻿using System;9
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -12,7 +12,7 @@ namespace Autocenter_v2.Models
 
         public Moto(int cilindradas)
         {
-            this.cilindradas = cilindradas;
+            this.Cilindradas = cilindradas;
         }
         
     }

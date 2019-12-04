@@ -6,9 +6,13 @@ namespace Autocenter_v2.Models
 {
     class Carro:Veiculo
     {
-        public int Cavalos { get; set; }
-        public float TorqueMotor { get; set; }
+        private float cavalos;
+        private float torqueMotor;
 
+        public float getCavalos() { return cavalos; }
+        public float getTorqueMotor() { return torqueMotor; }
+        public void setCavalos(float cav) { this.cavalos = cav; }
+        public void setTorqueMotor(float torqueM) { this.torqueMotor = torqueM; }
         public Carro() { }
         public Carro(int cavalos, float torqueMotor)
         {
