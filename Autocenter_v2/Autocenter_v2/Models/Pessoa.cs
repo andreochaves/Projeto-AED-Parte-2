@@ -14,15 +14,15 @@ namespace Autocenter_v2.Models
         public Pessoa() { }
         public Pessoa(string nome,string cpf,string endereco,int idade)
         {
-            this.Nome = nome;
-            this.Cpf = cpf;
-            this.Endereco = endereco;
-            this.Idade = idade;
+            this.nome = nome;
+            this.cpf = cpf;
+            this.endereco = endereco;
+            this.idade = idade;
         }
         public bool verificarIdade()
         {
          bool valido = false;
-            if (this.Idade >= 18)
+            if (this.idade >= 18)
             {
                 valido = true;
             }

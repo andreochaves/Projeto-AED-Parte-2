@@ -9,7 +9,7 @@ namespace Autocenter_v2.DAO
     {
         SqlConnection Con = new SqlConnection();
 
-        string DadosConexao = @"Data Source=DESKTOP-6Q4S098\SQLEXPRESS"
+        string DadosConexao = @"Data Source=DESKTOP-E2DHC11\SQLEXPRESS"
                             + ";Initial Catalog=projeto_aed2"
                             + ";Integrated Security=True"
                             + ";";

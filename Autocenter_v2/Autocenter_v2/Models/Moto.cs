@@ -12,7 +12,7 @@ namespace Autocenter_v2.Models
 
         public Moto(int cilindradas)
         {
-            this.Cilindradas = cilindradas;
+            this.cilindradas = cilindradas;
         }
         public int getCilindradas() { return cilindradas; }
         public void setCilindradas(int cl) { cilindradas = cl; }

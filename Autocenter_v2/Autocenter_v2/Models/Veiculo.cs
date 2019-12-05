@@ -15,10 +15,10 @@ namespace Autocenter_v2.Models
 
         public Veiculo(string marca,string modelo,string placa,string cor)
         {
-            this.Marca = marca;
-            this.Modelo = modelo;
-            this.Placa = placa;
-            this.Cor = cor;
+            this.marca = marca;
+            this.modelo = modelo;
+            this.placa = placa;
+            this.cor = cor;
         }
 
         public string getMarca() { return marca; }

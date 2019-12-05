@@ -12,9 +12,10 @@ namespace Autocenter_v2
         {
             Funcionario func = new Funcionario();
             FuncionarioController funcController = new FuncionarioController();
+            
 
-            Console.WriteLine("Informe o usuário: ");
-            user = Console.ReadLine();
+        Console.WriteLine("Informe o usuário: ");
+            user = Console.ReadLine().ToLower();
             
             Console.WriteLine("Informe a senha: ");
             senha = Console.ReadLine();
@@ -23,10 +24,53 @@ namespace Autocenter_v2
             func.setSenha(senha);
 
             bool funcPermitido = funcController.efetuarLogin(func);
+            string opc;
+            string msg = "";
 
             if (funcPermitido)
             {
-                Console.WriteLine("Logou, Funcionario autorizado!");
+                do
+                {
+                    Console.Clear();
+                    Console.WriteLine(msg);
+                    msg = "";
+
+                    Console.WriteLine("================================\n" +
+                        "1. Cadastrar clientes\n" +
+                        "2. Cadastrar funcionários\n" +
+                        "3. Solicitar orçamento\n" +
+                        "4. Pagar com sexo\n" +
+                        "5. Sair\n" +
+                        "================================\n");
+
+                    Console.WriteLine("Escolha uma opção: ");
+                    opc = Console.ReadLine();
+
+
+                    switch (opc)
+                    {
+                        case "1":
+                            break;
+
+                        case "2":
+                            break;
+
+                        case "3":
+                            break;
+
+                        case "4":
+                            break;
+
+                        case "5":
+                            Console.WriteLine("Programa finalizado!");
+                            break;
+
+                        default:
+                            msg = "\nOpção inválida, tente novamente!";
+                            break;
+
+                    }
+                } while (!opc.Equals("5"));
             }
             else
             {

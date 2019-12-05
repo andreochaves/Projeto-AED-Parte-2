@@ -12,7 +12,7 @@ namespace Autocenter_v2.Models
         public Cliente() { }
         public Cliente(int qtdPontosFidelidade)
         {
-            this.QtdPontosFidelidade = qtdPontosFidelidade;
+            this.qtdPontosFidelidade = qtdPontosFidelidade;
 
 
             

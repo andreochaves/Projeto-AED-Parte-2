@@ -15,10 +15,10 @@ namespace Autocenter_v2.Models
 
         public Orcamento(string tipoServico, double valor, string formaPagamento, double valorTotal)
         {
-            this.TipoServico = tipoServico;
-            this.Valor = valor;
-            this.FormaPagamento = formaPagamento;
-            this.ValorTotal = valorTotal;
+            this.tipoServico = tipoServico;
+            this.valor = valor;
+            this.formaPagamento = formaPagamento;
+            this.valorTotal = valorTotal;
         }
         public string getTipoServico() { return tipoServico; }
         public double getvalor() { return valor; }
