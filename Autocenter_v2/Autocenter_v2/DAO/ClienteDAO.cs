@@ -38,17 +38,14 @@ namespace Autocenter_v2.DAO
             {
                 cmd.Connection = ConnBD.Conectar();     //Abre Conexão com o BD
                 dr = cmd.ExecuteReader();                  //Armazena Informações do BD
-
-                if (dr.HasRows)                            //Verifica se Encontrou Dados no BD
-                {
-                    usuarioCadastrado = true;   
-                }
                 ConnBD.Desconectar();
+                usuarioCadastrado = true;
             }
             catch (Exception ex)
             {
                 ConnBD.Desconectar();
                 Console.WriteLine(ex.Message);
+                usuarioCadastrado = false;
             }
 
             return usuarioCadastrado;
