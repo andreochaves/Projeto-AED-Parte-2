@@ -21,5 +21,17 @@ namespace Autocenter_v2.Controllers
             }
             return false;
         }
+        
+        public bool cadastrarFuncionario(Funcionario novoFunc)
+        {
+            FuncionarioDAO funDao = new FuncionarioDAO();
+
+            bool cadastrado = funDao.InserirFuncionario(novoFunc);
+            if (cadastrado)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }

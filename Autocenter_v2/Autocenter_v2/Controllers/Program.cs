@@ -65,6 +65,15 @@ namespace Autocenter_v2
                             break;
 
                         case "2":
+                            bool funcionarioValido = cadastrarFuncionario();
+                            if (funcionarioValido)
+                            {
+                                msg = "Funcionario cadastrado com Sucesso!";
+                            }
+                            else
+                            {
+                                msg = "Funcionario NÃO Cadastrado!";
+                            }
                             break;
 
                         case "3":
@@ -134,5 +143,46 @@ namespace Autocenter_v2
             return clienteCadastrado;
         }
 
+        public static bool cadastrarFuncionario()
+        {
+            bool funcionarioCadastrado = false;
+            Console.WriteLine("Digite o nome do funcionario:\n");
+            string nome = Console.ReadLine();
+            Console.WriteLine("Digite o cpf do funcionario:\n");
+            string cpf = Console.ReadLine();
+            Console.WriteLine("Endereço do funcionario \nRua: ");
+            string endereco = Console.ReadLine();
+
+            Console.WriteLine("Bairro: ");
+            endereco += ", " + Console.ReadLine();
+
+            Console.WriteLine("Nº: ");
+            endereco += ", " + Console.ReadLine();
+
+            Console.WriteLine("Cidade / ES: ");
+            endereco += ", " + Console.ReadLine();
+            Console.WriteLine("Digite a idade do funcionario:\n");
+            int idade = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o usuáro do funcionario:\n");
+            string user = Console.ReadLine();
+            Console.WriteLine("Digite a senha do funcionario:\n");
+            string senha = Console.ReadLine();
+
+            Funcionario novofuncionario = new Funcionario();
+            novofuncionario = new Funcionario(nome, cpf, endereco, idade, user, senha);
+            bool cpfValido = Validator.validarCPF(novofuncionario.getCPF());
+
+            if (cpfValido)
+            {
+                FuncionarioController funcionarioController = new FuncionarioController();
+                funcionarioCadastrado = funcionarioController.cadastrarFuncionario(novofuncionario);
+            }
+            else
+            {
+                Console.WriteLine("CPF Inválido!");
+            }
+
+            return funcionarioCadastrado;
+        }
     }
 }
