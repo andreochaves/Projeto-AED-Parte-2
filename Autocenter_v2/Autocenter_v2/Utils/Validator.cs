@@ -6,7 +6,7 @@ namespace Autocenter_v2.Utils
 {
     public static class Validator
     {
-        public static bool verificarIdade(int idade)
+        public static bool validarIdade(int idade)
         {
             bool valido = false;
             if (idade >= 18)
