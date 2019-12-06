@@ -1,24 +1,26 @@
 ﻿using Autocenter_v2.Models;
 using Autocenter_v2.Controllers;
 using System;
+using Autocenter_v2.Utils;
 
 namespace Autocenter_v2
 {
+    
     public class Program
     {
-        public static string user;
-        public static string senha;
+
+        ClienteController clienteController = new ClienteController();
         static void Main(string[] args)
         {
             Funcionario func = new Funcionario();
             FuncionarioController funcController = new FuncionarioController();
             
 
-        Console.WriteLine("Informe o usuário: ");
-            user = Console.ReadLine().ToLower();
+            Console.WriteLine("Informe o usuário: ");
+            string user = Console.ReadLine().ToLower();
             
             Console.WriteLine("Informe a senha: ");
-            senha = Console.ReadLine();
+            string senha = Console.ReadLine();
 
             func.setUsuario(user);
             func.setSenha(senha);
@@ -50,6 +52,16 @@ namespace Autocenter_v2
                     switch (opc)
                     {
                         case "1":
+                            bool clienteValido = cadastrarCliente();
+
+                            if (clienteValido)
+                            {
+                                msg = "Cliente cadastrado com Sucesso!";
+                            }
+                            else
+                            {
+                                msg = "Cliente NÃO Cadastrado!";
+                            }
                             break;
 
                         case "2":
@@ -77,8 +89,50 @@ namespace Autocenter_v2
                 Console.WriteLine("Funcionario NÃO AUTORIZADO!");
             }
 
-            
-
+           
         }
+        
+        public static bool cadastrarCliente()
+        {
+            bool clienteCadastrado = false;
+
+            Console.WriteLine("Nome do cliente: ");
+            string nome = Console.ReadLine();
+
+            Console.WriteLine("CPF do cliente: ");
+            string cpf = Console.ReadLine();
+
+            Console.WriteLine("Endereço do cliente \nRua: ");
+            string endereco = Console.ReadLine();
+
+            Console.WriteLine("Bairro: ");
+            endereco += ", " + Console.ReadLine();
+
+            Console.WriteLine("Nº: ");
+            endereco += ", " + Console.ReadLine();
+
+            Console.WriteLine("Cidade / ES: ");
+            endereco += ", " + Console.ReadLine();
+
+            Console.WriteLine("Idade do cliente: ");
+            int idade = Convert.ToInt32(Console.ReadLine());
+
+            Cliente cliente = new Cliente();
+            cliente = new Cliente(nome, cpf, endereco, idade);
+            bool cpfValido = Validator.validarCPF(cliente.getCPF());
+
+            if (cpfValido) { 
+            ClienteController clienteController = new ClienteController();
+            clienteCadastrado = clienteController.cadastrarCliente(cliente);
+
+            }
+            else
+            {
+                Console.WriteLine("CPF Inválido!");
+            }
+
+            return clienteCadastrado;
+        }
+
     }
 }

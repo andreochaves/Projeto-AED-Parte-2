@@ -13,7 +13,7 @@ namespace Autocenter_v2.DAO
         SqlCommand cmd = new SqlCommand();
         Connection ConnBD = new Connection();
 
-        public bool cadastrarCliente(Cliente cliente) {
+        public bool inserirCliente(Cliente cliente) {
         cmd.CommandText = @"INSERT INTO Cliente
            (nome
            , cpf
@@ -28,6 +28,10 @@ namespace Autocenter_v2.DAO
            , @qtd_pontos_fidelidade)";  //Comando Sql
 
             cmd.Parameters.AddWithValue("@nome", cliente.getNome());     //Recebe Valor p/ Pesquisa no BD
+            cmd.Parameters.AddWithValue("@cpf", cliente.getCPF());
+            cmd.Parameters.AddWithValue("@endereco", cliente.getEndereco());
+            cmd.Parameters.AddWithValue("@idade", cliente.getIdade());
+            cmd.Parameters.AddWithValue("@qtd_pontos_fidelidade", cliente.getQtdPontosFidelidade());
 
             bool usuarioCadastrado = false;
             try

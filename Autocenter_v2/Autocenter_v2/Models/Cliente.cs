@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Autocenter_v2.Controllers;
 
 namespace Autocenter_v2.Models
 {
@@ -10,23 +11,21 @@ namespace Autocenter_v2.Models
 
 
         public Cliente() { }
-        public Cliente(int qtdPontosFidelidade)
+        public Cliente(string nome, string cpf, string endereco, int idade) : base()
         {
-            this.qtdPontosFidelidade = qtdPontosFidelidade;
-
-
-            
-
+            this.setNome(nome);
+            this.setCPF(cpf);
+            this.setEndereco(endereco);
+            this.setIdade(idade);
+            this.qtdPontosFidelidade = 0;
         }
-        void VerificaPontos()
-            {
 
-            }
-        void AdicionaPontos()
+        public void AdicionarPontos()
             {
-
+            this.qtdPontosFidelidade += 10;
             }
+
         public int getQtdPontosFidelidade() { return qtdPontosFidelidade; }
-        public void setQtdPontosFidelidade(int qpf) { qtdPontosFidelidade = qpf; }
+
     }
 }
