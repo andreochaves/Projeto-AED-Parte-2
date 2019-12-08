@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Developer\\Documents\\Projetos\\C#\\Projeto_AED2\\Projeto-AED-Parte-2\\Autocenter_v2\\Autocenter_v2\\Autocenter_v2.csproj": {}
+    "C:\\Users\\ANDRÉ\\Desktop\\Projeto-AED-Parte-2-master\\Autocenter_v2\\Autocenter_v2\\Autocenter_v2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Developer\\Documents\\Projetos\\C#\\Projeto_AED2\\Projeto-AED-Parte-2\\Autocenter_v2\\Autocenter_v2\\Autocenter_v2.csproj": {
+    "C:\\Users\\ANDRÉ\\Desktop\\Projeto-AED-Parte-2-master\\Autocenter_v2\\Autocenter_v2\\Autocenter_v2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Developer\\Documents\\Projetos\\C#\\Projeto_AED2\\Projeto-AED-Parte-2\\Autocenter_v2\\Autocenter_v2\\Autocenter_v2.csproj",
+        "projectUniqueName": "C:\\Users\\ANDRÉ\\Desktop\\Projeto-AED-Parte-2-master\\Autocenter_v2\\Autocenter_v2\\Autocenter_v2.csproj",
         "projectName": "Autocenter_v2",
-        "projectPath": "C:\\Users\\Developer\\Documents\\Projetos\\C#\\Projeto_AED2\\Projeto-AED-Parte-2\\Autocenter_v2\\Autocenter_v2\\Autocenter_v2.csproj",
-        "packagesPath": "C:\\Users\\Developer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Developer\\Documents\\Projetos\\C#\\Projeto_AED2\\Projeto-AED-Parte-2\\Autocenter_v2\\Autocenter_v2\\obj\\",
+        "projectPath": "C:\\Users\\ANDRÉ\\Desktop\\Projeto-AED-Parte-2-master\\Autocenter_v2\\Autocenter_v2\\Autocenter_v2.csproj",
+        "packagesPath": "C:\\Users\\ANDRÉ\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ANDRÉ\\Desktop\\Projeto-AED-Parte-2-master\\Autocenter_v2\\Autocenter_v2\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ANDRÉ\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
