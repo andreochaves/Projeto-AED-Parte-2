@@ -6,28 +6,36 @@ namespace Autocenter_v2.Models
 {
     class Orcamento
     {
-        private string tipoServico;
-        private double valor;
+        private string nomeCliente;
+        private string veiculo;
+        private string placa;
+        private string servicos;
         private string formaPagamento;
         private double valorTotal;
 
         public Orcamento() { }
 
-        public Orcamento(string tipoServico, double valor, string formaPagamento, double valorTotal)
+        public Orcamento(string nomeCliente, string veiculo, string placa,string servicos, string formaPagamento, double valorTotal)
         {
-            this.tipoServico = tipoServico;
-            this.valor = valor;
+            this.nomeCliente = nomeCliente;
+            this.veiculo = veiculo;
+            this.placa = placa;
+            this.servicos = servicos;
             this.formaPagamento = formaPagamento;
             this.valorTotal = valorTotal;
         }
-        public string getTipoServico() { return tipoServico; }
-        public double getvalor() { return valor; }
+        public string getNomeCliente() { return nomeCliente; }
+        public string getVeiculo() { return veiculo; }
+        public string getPlaca() { return placa; }
+        public string getServicos() { return servicos; }
         public string getFormaPagamento() { return formaPagamento; }
         public double getValorTotal() { return valorTotal; }
-        public void setMarca(string ts) { tipoServico = ts; }
-        public void setModelo(double va) { valor = va; }
-        public void setPlaca(string fp) { formaPagamento = fp; }
-        public void setCor(double vt) { valorTotal = vt; }
+        public void setNomeCliente(string nc) { nomeCliente = nc; }
+        public void setVeiculo(string ve) { veiculo = ve; }
+        public void setPlaca(string pl) { placa = pl; }
+        public void setServiços(string se) {servicos  = se; }
+        public void setFormaPagamento(string fp) { formaPagamento = fp; }
+        public void setValorTotal(double vt) { valorTotal = vt; }
        
     }
 }

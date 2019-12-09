@@ -588,11 +588,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ANDRÉ\\Desktop\\Projeto-AED-Parte-2-master\\Autocenter_v2\\Autocenter_v2\\Autocenter_v2.csproj",
+      "projectUniqueName": "C:\\Users\\ANDRÉ\\Desktop\\Projeto AED 2\\Projeto-AED-Parte-2-master\\Autocenter_v2\\Autocenter_v2\\Autocenter_v2.csproj",
       "projectName": "Autocenter_v2",
-      "projectPath": "C:\\Users\\ANDRÉ\\Desktop\\Projeto-AED-Parte-2-master\\Autocenter_v2\\Autocenter_v2\\Autocenter_v2.csproj",
+      "projectPath": "C:\\Users\\ANDRÉ\\Desktop\\Projeto AED 2\\Projeto-AED-Parte-2-master\\Autocenter_v2\\Autocenter_v2\\Autocenter_v2.csproj",
       "packagesPath": "C:\\Users\\ANDRÉ\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ANDRÉ\\Desktop\\Projeto-AED-Parte-2-master\\Autocenter_v2\\Autocenter_v2\\obj\\",
+      "outputPath": "C:\\Users\\ANDRÉ\\Desktop\\Projeto AED 2\\Projeto-AED-Parte-2-master\\Autocenter_v2\\Autocenter_v2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
