@@ -6,10 +6,10 @@ namespace Autocenter_v2.Models
 {
     class Veiculo
     {
-        private string marca;
-        private string modelo;
-        private string placa;
-        private string cor;
+        protected string marca;
+        protected string modelo;
+        protected string placa;
+        protected string cor;
 
         public Veiculo() { }
 

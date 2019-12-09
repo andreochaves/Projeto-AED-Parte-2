@@ -10,8 +10,12 @@ namespace Autocenter_v2.Models
 
         public Moto() { }
 
-        public Moto(int cilindradas)
+        public Moto(string marca, string modelo, string placa, string cor, int cilindradas)
         {
+            this.marca = marca;
+            this.modelo = modelo;
+            this.placa = placa;
+            this.cor = cor;
             this.cilindradas = cilindradas;
         }
         public int getCilindradas() { return cilindradas; }
