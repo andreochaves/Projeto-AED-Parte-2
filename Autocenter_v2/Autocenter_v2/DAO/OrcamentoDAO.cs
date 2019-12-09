@@ -13,6 +13,28 @@ namespace Autocenter_v2.DAO
         SqlCommand cmd = new SqlCommand();
         Connection ConnBD = new Connection();
 
+        public void exibirServicos()
+        {
+            cmd.CommandText = @"SELECT * FROM Servicos";  //Comando Sql
+            try
+            {
+                cmd.Connection = ConnBD.Conectar();     //Abre Conexão com o BD
+                dr = cmd.ExecuteReader();                  //Armazena Informações do BD
+
+                if (dr.HasRows)                            //Verifica se Encontrou Dados no BD
+                {
+                     
+                }
+                ConnBD.Desconectar();
+            }
+            catch (Exception ex)
+            {
+                ConnBD.Desconectar();
+                Console.WriteLine(ex.Message);
+            }
+
+        }
+
         public bool inserirOrcamento(Orcamento orcamento)
         {
             cmd.CommandText = @"INSERT INTO Orcamento

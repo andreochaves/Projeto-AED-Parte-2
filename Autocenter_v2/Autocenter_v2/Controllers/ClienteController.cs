@@ -61,10 +61,38 @@ namespace Autocenter_v2.Controllers
 
             if (cpfValido)
             {
-                ClienteController clienteController = new ClienteController();
-                ClienteDAO clienteDAO = new ClienteDAO();
+                bool veiculoValido = false;
+                string resp;
 
+                do { 
+                    Console.WriteLine("Digite 1 para cadastrar seu carro ou 2 para sua moto: ");
+                    string veiculo = Console.ReadLine();
+
+                    if (veiculo.Equals("1"))
+                    {
+                        veiculoValido = VeiculoController.cadastrarCarro();
+                    }
+                    else if (veiculo.Equals("2"))
+                    {
+                        veiculoValido = VeiculoController.cadastrarMoto();
+                    }
+
+                    Console.WriteLine("Deseja cadastrar outro veículo?");
+                    resp = Console.ReadLine(); 
+                } while (resp.Equals("sim"));
+
+
+                if (veiculoValido)
+                {
+
+                ClienteDAO clienteDAO = new ClienteDAO();
                 clienteCadastrado = clienteDAO.inserirCliente(cliente);
+
+                }
+                else
+                {
+                    Program.msg += "Veículo não Cadastrado!\n";
+                }
             }
             else
             {

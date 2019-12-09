@@ -60,3 +60,8 @@ C:\Users\ANDRÉ\Desktop\Projeto-AED-Parte-2-master\Autocenter_v2\Autocenter_v2\o
 C:\Users\ANDRÉ\Desktop\Projeto-AED-Parte-2-master\Autocenter_v2\Autocenter_v2\obj\Debug\netcoreapp3.0\Autocenter_v2.csproj.CopyComplete
 C:\Users\ANDRÉ\Desktop\Projeto-AED-Parte-2-master\Autocenter_v2\Autocenter_v2\obj\Debug\netcoreapp3.0\Autocenter_v2.dll
 C:\Users\ANDRÉ\Desktop\Projeto-AED-Parte-2-master\Autocenter_v2\Autocenter_v2\obj\Debug\netcoreapp3.0\Autocenter_v2.pdb
+C:\Users\Developer\Desktop\git\Projeto-AED-Parte-2\Autocenter_v2\Autocenter_v2\obj\Debug\netcoreapp3.0\Autocenter_v2.csprojAssemblyReference.cache
+C:\Users\Developer\Desktop\git\Projeto-AED-Parte-2\Autocenter_v2\Autocenter_v2\obj\Debug\netcoreapp3.0\Autocenter_v2.AssemblyInfoInputs.cache
+C:\Users\Developer\Desktop\git\Projeto-AED-Parte-2\Autocenter_v2\Autocenter_v2\obj\Debug\netcoreapp3.0\Autocenter_v2.AssemblyInfo.cs
+C:\Users\Developer\Desktop\git\Projeto-AED-Parte-2\Autocenter_v2\Autocenter_v2\obj\Debug\netcoreapp3.0\Autocenter_v2.dll
+C:\Users\Developer\Desktop\git\Projeto-AED-Parte-2\Autocenter_v2\Autocenter_v2\obj\Debug\netcoreapp3.0\Autocenter_v2.pdb

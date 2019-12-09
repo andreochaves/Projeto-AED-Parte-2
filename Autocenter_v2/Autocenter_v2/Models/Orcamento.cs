@@ -9,7 +9,7 @@ namespace Autocenter_v2.Models
         private string cpfCliente;
         private string veiculo;
         private string placa;
-        private string servicos;
+        private string[] servicos;
         private string formaPagamento;
         private double valorTotal;
 
