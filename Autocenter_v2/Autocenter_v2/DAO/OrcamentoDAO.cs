@@ -15,40 +15,44 @@ namespace Autocenter_v2.DAO
 
         public bool inserirOrcamento(Orcamento orcamento)
         {
-            cmd.CommandText = @"INSERT INTO Cliente
-           (nome
-           , cpf
-           , endereco
-           , idade
-           , qtd_pontos_fidelidade)
+            cmd.CommandText = @"INSERT INTO Orcamento
+           (nomeCliente
+           , veiculo
+           , placa
+           , servico
+           , formaPagamento
+           , valorTotal)
      VALUES
-            (@nome
-           , @cpf
-           , @endereco
-            , @idade
-           , @qtd_pontos_fidelidade)";  //Comando Sql
+           (@nomeCliente
+           , @veiculo
+           , @placa
+           , @servico
+           , @formaPagamento
+           , @valorTotal)";  //Comando Sql
 
-            cmd.Parameters.AddWithValue("@nome", cliente.getNome());     //Recebe Valor p/ Pesquisa no BD
-            cmd.Parameters.AddWithValue("@cpf", cliente.getCPF());
-            cmd.Parameters.AddWithValue("@endereco", cliente.getEndereco());
-            cmd.Parameters.AddWithValue("@idade", cliente.getIdade());
-            cmd.Parameters.AddWithValue("@qtd_pontos_fidelidade", cliente.getQtdPontosFidelidade());
+            cmd.Parameters.AddWithValue("@nomeCliente", orcamento.getNomeCliente());     //Recebe Valor p/ Pesquisa no BD
+            cmd.Parameters.AddWithValue("@veiculo", orcamento.getVeiculo());
+            cmd.Parameters.AddWithValue("@placa", orcamento.getPlaca());
+            cmd.Parameters.AddWithValue("@servico", orcamento.getServicos());
+            cmd.Parameters.AddWithValue("@formaPagamento", orcamento.getFormaPagamento());
+            cmd.Parameters.AddWithValue("@valorTotal", orcamento.getValorTotal());
 
-            bool usuarioCadastrado = false;
+            bool orcamentoCadastrado = false;
             try
             {
                 cmd.Connection = ConnBD.Conectar();     //Abre Conexão com o BD
                 dr = cmd.ExecuteReader();                  //Armazena Informações do BD
                 ConnBD.Desconectar();
-                usuarioCadastrado = true;
+                orcamentoCadastrado = true;
             }
             catch (Exception ex)
             {
                 ConnBD.Desconectar();
                 Console.WriteLine(ex.Message);
-                usuarioCadastrado = false;
+                orcamentoCadastrado = false;
             }
 
-            return usuarioCadastrado;
+            return orcamentoCadastrado;
         }
+    }
 }
