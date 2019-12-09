@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Developer\\Desktop\\git\\Projeto-AED-Parte-2\\Autocenter_v2\\Autocenter_v2\\Autocenter_v2.csproj": {}
+    "C:\\Users\\Developer\\Documents\\Projetos\\C#\\Projeto_AED2\\Projeto-AED-Parte-2\\Autocenter_v2\\Autocenter_v2\\Autocenter_v2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Developer\\Desktop\\git\\Projeto-AED-Parte-2\\Autocenter_v2\\Autocenter_v2\\Autocenter_v2.csproj": {
+    "C:\\Users\\Developer\\Documents\\Projetos\\C#\\Projeto_AED2\\Projeto-AED-Parte-2\\Autocenter_v2\\Autocenter_v2\\Autocenter_v2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Developer\\Desktop\\git\\Projeto-AED-Parte-2\\Autocenter_v2\\Autocenter_v2\\Autocenter_v2.csproj",
+        "projectUniqueName": "C:\\Users\\Developer\\Documents\\Projetos\\C#\\Projeto_AED2\\Projeto-AED-Parte-2\\Autocenter_v2\\Autocenter_v2\\Autocenter_v2.csproj",
         "projectName": "Autocenter_v2",
-        "projectPath": "C:\\Users\\Developer\\Desktop\\git\\Projeto-AED-Parte-2\\Autocenter_v2\\Autocenter_v2\\Autocenter_v2.csproj",
+        "projectPath": "C:\\Users\\Developer\\Documents\\Projetos\\C#\\Projeto_AED2\\Projeto-AED-Parte-2\\Autocenter_v2\\Autocenter_v2\\Autocenter_v2.csproj",
         "packagesPath": "C:\\Users\\Developer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Developer\\Desktop\\git\\Projeto-AED-Parte-2\\Autocenter_v2\\Autocenter_v2\\obj\\",
+        "outputPath": "C:\\Users\\Developer\\Documents\\Projetos\\C#\\Projeto_AED2\\Projeto-AED-Parte-2\\Autocenter_v2\\Autocenter_v2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Developer\\AppData\\Roaming\\NuGet\\NuGet.Config",

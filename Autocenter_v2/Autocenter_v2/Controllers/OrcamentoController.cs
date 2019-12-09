@@ -52,11 +52,9 @@ namespace Autocenter_v2.Controllers
             Console.WriteLine("Forma de Pagamento: ");
             string formaPagamento =  Console.ReadLine();
 
-            Console.WriteLine(double valorTotal);
 
-
-            Orcamento orcamento = new Orcamento();
-            orcamento = new Orcamento(cpfCliente, veiculo, placa, servico,formaPagamento,valorTotal);
+           // Orcamento orcamento = new Orcamento();
+            //orcamento = new Orcamento(cpfCliente, veiculo, placa, servico,formaPagamento,valorTotal);
            
             return OrcamentoCadastrado;
         }

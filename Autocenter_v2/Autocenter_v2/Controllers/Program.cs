@@ -3,6 +3,7 @@ using Autocenter_v2.Models;
 using Autocenter_v2.Controllers;
 using System;
 using Autocenter_v2.Utils;
+using Autocenter_v2.DAO;
 
 namespace Autocenter_v2
 {
@@ -80,6 +81,8 @@ namespace Autocenter_v2
                             break;
 
                         case "3":
+                            OrcamentoDAO oc = new OrcamentoDAO();
+                            oc.exibirServicos();
                             break;
 
                         case "4":
