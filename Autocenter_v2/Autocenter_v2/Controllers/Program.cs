@@ -11,6 +11,7 @@ namespace Autocenter_v2
     {
         public static string msg = "";
         ClienteController clienteController = new ClienteController();
+        OrcamentoController orcamentoController = new OrcamentoController();
         static void Main(string[] args)
         {
             Funcionario func = new Funcionario();
@@ -82,6 +83,15 @@ namespace Autocenter_v2
                             break;
 
                         case "4":
+                            bool orcamentoValido = OrcamentoController.cadastrarOrcamento();
+                            if (orcamentoValido)
+                            {
+                                msg += "Orçamento cadastrado com Sucesso!";
+                            }
+                            else
+                            {
+                                msg += "Orçamento NÃO Cadastrado!";
+                            }
                             break;
 
                         case "5":
