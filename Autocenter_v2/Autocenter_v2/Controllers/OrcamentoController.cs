@@ -16,8 +16,8 @@ namespace Autocenter_v2.Controllers
             string servico;
             bool OrcamentoCadastrado = false;
 
-            Console.WriteLine("Nome do cliente: ");
-            string nomeCliente = Console.ReadLine();
+            Console.WriteLine("CPF do cliente: ");
+            string cpfCliente = Console.ReadLine();
 
             Console.WriteLine("\nVeículo:" +
                 "\n1 - Carro" +
@@ -56,7 +56,7 @@ namespace Autocenter_v2.Controllers
 
 
             Orcamento orcamento = new Orcamento();
-            orcamento = new Orcamento(nomeCliente, veiculo, placa, servico,formaPagamento,valorTotal);
+            orcamento = new Orcamento(cpfCliente, veiculo, placa, servico,formaPagamento,valorTotal);
            
             return OrcamentoCadastrado;
         }

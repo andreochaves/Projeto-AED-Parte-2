@@ -16,21 +16,21 @@ namespace Autocenter_v2.DAO
         public bool inserirOrcamento(Orcamento orcamento)
         {
             cmd.CommandText = @"INSERT INTO Orcamento
-           (nomeCliente
+           (cpfCliente
            , veiculo
            , placa
            , servico
            , formaPagamento
            , valorTotal)
      VALUES
-           (@nomeCliente
+           (@cpfCliente
            , @veiculo
            , @placa
            , @servico
            , @formaPagamento
            , @valorTotal)";  //Comando Sql
 
-            cmd.Parameters.AddWithValue("@nomeCliente", orcamento.getNomeCliente());     //Recebe Valor p/ Pesquisa no BD
+            cmd.Parameters.AddWithValue("@cpfCliente", orcamento.getCPFCliente());     //Recebe Valor p/ Pesquisa no BD
             cmd.Parameters.AddWithValue("@veiculo", orcamento.getVeiculo());
             cmd.Parameters.AddWithValue("@placa", orcamento.getPlaca());
             cmd.Parameters.AddWithValue("@servico", orcamento.getServicos());
